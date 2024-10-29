@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Website</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      header.jumbotron {
+        background-image: url("images/background1.jpg");
+        background-size: cover; /* Makes the background image cover the entire header */
+        background-position: center; /* Centers the image */
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds shadow for better readability */
+        height: 400px; /* Sets a fixed height for the header */
+        display: flex; /* Enables flexbox */
+        align-items: center; /* Vertically centers content */
+        padding-left: 30px; /* Adds left padding */
+      }
+
+      .navbar-brand {
+        font-size: 1.8rem; /* Increase font size */
+        font-weight: bold; /* Make the font bold */
+        color: #e74c3c; /* Set a custom color */
+        text-transform: uppercase; /* Uppercase letters */
+        transition: color 0.3s ease; /* Smooth color transition */
+      }
+
+      .navbar-brand:hover {
+        color: #c0392b; /* Darker shade on hover */
+      }
+
+      header h1,
+      header p {
+        margin: 0; /* Removes default margin */
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Hyderabadhi Foods</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#menu">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <header class="jumbotron text-center">
+      <div>
+        <h1>Welcome to Our Restaurant!</h1>
+        <p>Delicious Indian food awaits you.</p>
+      </div>
+    </header>
+
+    <section id="menu" class="container">
+      <h2 class="text-center">Our Menu</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <!-- Ensure this has mb-4 -->
+          <div class="card">
+            <img
+              src="images/chicken.jpg"
+              class="card-img-top img-fluid"
+              alt="Chicken Tikka Masala"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Chicken Tikka Masala</h5>
+              <p class="card-text">
+                Spicy chicken cooked in a creamy tomato sauce.
+              </p>
+              <p class="card-text"><strong>Rs.129</strong></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              src="images/samosa.jpg"
+              class="card-img-top img-fluid"
+              alt="Samosa"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Samosa</h5>
+              <p class="card-text">
+                Crispy pastry filled with spiced potatoes and peas.
+              </p>
+              <p class="card-text"><strong>Rs.30</strong></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              src="images/panner.jpg"
+              class="card-img-top img-fluid"
+              alt="Paneer Tikka"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Paneer Tikka</h5>
+              <p class="card-text">Marinated paneer grilled to perfection.</p>
+              <p class="card-text"><strong>Rs.139</strong></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              src="images/biryani.jpg"
+              class="card-img-top img-fluid"
+              alt="Biryani"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Biryani</h5>
+              <p class="card-text">
+                Aromatic rice dish with spices and meat or vegetables.
+              </p>
+              <p class="card-text"><strong>Rs.100</strong></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              src="images/butterChicken.jpg"
+              class="card-img-top img-fluid"
+              alt="Butter Chicken"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Butter Chicken</h5>
+              <p class="card-text">
+                Creamy tomato curry with tender chicken pieces.
+              </p>
+              <p class="card-text"><strong>Rs.99</strong></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              src="images/DalMakhani.jpg"
+              class="card-img-top img-fluid"
+              alt="Dal Makhani"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Dal Makhani</h5>
+              <p class="card-text">
+                Rich lentil dish slow-cooked with butter and cream.
+              </p>
+              <p class="card-text"><strong>Rs.149</strong></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              src="images/palak-paneer-recipe.jpg"
+              class="card-img-top img-fluid"
+              alt="Palak Paneer"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Palak Paneer</h5>
+              <p class="card-text">
+                Spinach and cottage cheese cooked with spices.
+              </p>
+              <p class="card-text"><strong>Rs.115</strong></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              src="images/chole_bhature.avif"
+              class="card-img-top img-fluid"
+              alt="Chole Bhature"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Chole Bhature</h5>
+              <p class="card-text">
+                Spicy chickpeas served with deep-fried bread.
+              </p>
+              <p class="card-text"><strong>Rs.80</strong></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              src="images/naan.jpg"
+              class="card-img-top img-fluid"
+              alt="Naan"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Naan</h5>
+              <p class="card-text">
+                Soft, fluffy Indian bread, perfect with curries.
+              </p>
+              <p class="card-text"><strong>Rs.90</strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="container my-5">
+      <h2 class="text-center">Contact Us</h2>
+      <form id="contact-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" id="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" id="email" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea
+            class="form-control"
+            id="message"
+            rows="4"
+            required
+          ></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </section>
+
+    <footer class="text-center py-4">
+      <p>&copy; 2024 Restaurant Name. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

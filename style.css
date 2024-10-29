@@ -1,0 +1,53 @@
+header {
+  background: url("https://via.placeholder.com/1200x600") no-repeat center
+    center/cover;
+  color: white;
+  padding: 60px 0;
+}
+
+footer {
+  background-color: #f8f9fa;
+  padding: 20px 0;
+}
+
+.color-font {
+  color: black;
+  text-align: left;
+  font-size: 200px;
+}
+
+.colorrr {
+  color: red;
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #e74c3c;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: #c0392b;
+}
+
+.card {
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: auto;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
